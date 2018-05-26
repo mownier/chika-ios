@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		042C685613F02122E7F35971 /* Pods_Chika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D86249078686F4C6DEE114 /* Pods_Chika.framework */; };
 		4871AC3320B923DE00128EB5 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4871AC3220B923DE00128EB5 /* Welcome.swift */; };
+		4871AC3520B92CFF00128EB5 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4871AC3420B92CFF00128EB5 /* Home.swift */; };
+		4871AC3720B930D400128EB5 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4871AC3620B930D400128EB5 /* ContactList.swift */; };
+		4871AC3920B930DB00128EB5 /* Inbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4871AC3820B930DB00128EB5 /* Inbox.swift */; };
 		48B4FF3320B7E51400F22627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4FF3220B7E51400F22627 /* AppDelegate.swift */; };
 		48B4FF3820B7E51400F22627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B4FF3620B7E51400F22627 /* Main.storyboard */; };
 		48B4FF3A20B7E51400F22627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B4FF3920B7E51400F22627 /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 /* Begin PBXFileReference section */
 		40D86249078686F4C6DEE114 /* Pods_Chika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4871AC3220B923DE00128EB5 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		4871AC3420B92CFF00128EB5 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4871AC3620B930D400128EB5 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		4871AC3820B930DB00128EB5 /* Inbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inbox.swift; sourceTree = "<group>"; };
 		48B4FF2F20B7E51400F22627 /* Chika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chika.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B4FF3220B7E51400F22627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B4FF3720B7E51400F22627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				48B4FF3220B7E51400F22627 /* AppDelegate.swift */,
+				4871AC3620B930D400128EB5 /* ContactList.swift */,
+				4871AC3420B92CFF00128EB5 /* Home.swift */,
+				4871AC3820B930DB00128EB5 /* Inbox.swift */,
 				48B4FF5020B7F2C600F22627 /* Registrar.swift */,
 				48B4FF4C20B7E84F00F22627 /* Root.swift */,
 				48B4FF4A20B7E82A00F22627 /* SignIn.swift */,
@@ -220,9 +229,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Chika/Pods-Chika-resources.sh",
+				"${PODS_ROOT}/ChikaAssets/ChikaAssets/Source/ChikaAssets.xcassets",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ChikaAssets.xcassets",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -236,26 +248,36 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Chika/Pods-Chika-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChikaContactList/ChikaContactList.framework",
 				"${BUILT_PRODUCTS_DIR}/ChikaCore/ChikaCore.framework",
 				"${BUILT_PRODUCTS_DIR}/ChikaFirebase/ChikaFirebase.framework",
+				"${BUILT_PRODUCTS_DIR}/ChikaInbox/ChikaInbox.framework",
 				"${BUILT_PRODUCTS_DIR}/ChikaRegistrar/ChikaRegistrar.framework",
 				"${BUILT_PRODUCTS_DIR}/ChikaSignIn/ChikaSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/ChikaUI/ChikaUI.framework",
 				"${BUILT_PRODUCTS_DIR}/ChikaWelcome/ChikaWelcome.framework",
+				"${BUILT_PRODUCTS_DIR}/DateTools/DateTools.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCommunity/FirebaseCommunity.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChikaContactList.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChikaCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChikaFirebase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChikaInbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChikaRegistrar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChikaSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChikaUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChikaWelcome.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTools.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCommunity.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +296,9 @@
 				4871AC3320B923DE00128EB5 /* Welcome.swift in Sources */,
 				48B4FF5120B7F2C600F22627 /* Registrar.swift in Sources */,
 				48B4FF4B20B7E82A00F22627 /* SignIn.swift in Sources */,
+				4871AC3720B930D400128EB5 /* ContactList.swift in Sources */,
+				4871AC3520B92CFF00128EB5 /* Home.swift in Sources */,
+				4871AC3920B930DB00128EB5 /* Inbox.swift in Sources */,
 				48B4FF4D20B7E84F00F22627 /* Root.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

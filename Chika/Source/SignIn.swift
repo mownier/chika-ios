@@ -9,12 +9,7 @@
 import ChikaSignIn
 
 var signInScene: ChikaSignIn.Scene {
-    return signInScene(withSuccessBlock: {
-        let vc = UIViewController()
-        vc.view.backgroundColor = UIColor.white
-        vc.title = "Home"
-        mainWindow?.rootViewController = navigationController(withRoot: vc)
-    })
+    return signInScene(withSuccessBlock: { makeHomeSceneAsRoot() })
 }
 
 func signInScene(withOutput block: @escaping (Error?) -> Void) -> ChikaSignIn.Scene {

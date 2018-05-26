@@ -9,12 +9,7 @@
 import ChikaRegistrar
 
 var registrarScene: ChikaRegistrar.Scene {
-    return registrarScene(withSuccessBlock: {
-        let vc = UIViewController()
-        vc.view.backgroundColor = UIColor.white
-        vc.title = "Home"
-        mainWindow?.rootViewController = navigationController(withRoot: vc)
-    })
+    return registrarScene(withSuccessBlock: { makeHomeSceneAsRoot() })
 }
 
 func registrarScene(withOutput block: @escaping (Error?) -> Void) -> ChikaRegistrar.Scene {
