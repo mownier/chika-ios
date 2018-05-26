@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042C685613F02122E7F35971 /* Pods_Chika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D86249078686F4C6DEE114 /* Pods_Chika.framework */; };
+		4871AC3320B923DE00128EB5 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4871AC3220B923DE00128EB5 /* Welcome.swift */; };
+		48B4FF3320B7E51400F22627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4FF3220B7E51400F22627 /* AppDelegate.swift */; };
+		48B4FF3820B7E51400F22627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B4FF3620B7E51400F22627 /* Main.storyboard */; };
+		48B4FF3A20B7E51400F22627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B4FF3920B7E51400F22627 /* Assets.xcassets */; };
+		48B4FF3D20B7E51400F22627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B4FF3B20B7E51400F22627 /* LaunchScreen.storyboard */; };
+		48B4FF4B20B7E82A00F22627 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4FF4A20B7E82A00F22627 /* SignIn.swift */; };
+		48B4FF4D20B7E84F00F22627 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4FF4C20B7E84F00F22627 /* Root.swift */; };
+		48B4FF4F20B7EA2800F22627 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48B4FF4E20B7EA2800F22627 /* GoogleService-Info.plist */; };
+		48B4FF5120B7F2C600F22627 /* Registrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4FF5020B7F2C600F22627 /* Registrar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		40D86249078686F4C6DEE114 /* Pods_Chika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4871AC3220B923DE00128EB5 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		48B4FF2F20B7E51400F22627 /* Chika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chika.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B4FF3220B7E51400F22627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48B4FF3720B7E51400F22627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48B4FF3920B7E51400F22627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48B4FF3C20B7E51400F22627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48B4FF3E20B7E51400F22627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B4FF4A20B7E82A00F22627 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		48B4FF4C20B7E84F00F22627 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		48B4FF4E20B7EA2800F22627 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		48B4FF5020B7F2C600F22627 /* Registrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registrar.swift; sourceTree = "<group>"; };
+		8C55B4A4C6615756D1318A3B /* Pods-Chika.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chika.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chika/Pods-Chika.release.xcconfig"; sourceTree = "<group>"; };
+		F27401785E651FF4C93DBBA5 /* Pods-Chika.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chika.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chika/Pods-Chika.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48B4FF2C20B7E51400F22627 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042C685613F02122E7F35971 /* Pods_Chika.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48B4FF2620B7E51400F22627 = {
+			isa = PBXGroup;
+			children = (
+				48B4FF3120B7E51400F22627 /* Chika */,
+				48B4FF3020B7E51400F22627 /* Products */,
+				F7BC7DEAA3546A465961D72B /* Pods */,
+				FD4D0295EE3D7C34C5EAD381 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		48B4FF3020B7E51400F22627 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48B4FF2F20B7E51400F22627 /* Chika.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48B4FF3120B7E51400F22627 /* Chika */ = {
+			isa = PBXGroup;
+			children = (
+				48B4FF4720B7E7DB00F22627 /* Source */,
+				48B4FF4420B7E64900F22627 /* Resources */,
+				48B4FF4520B7E65E00F22627 /* Support Files */,
+			);
+			path = Chika;
+			sourceTree = "<group>";
+		};
+		48B4FF4420B7E64900F22627 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48B4FF3920B7E51400F22627 /* Assets.xcassets */,
+				48B4FF3B20B7E51400F22627 /* LaunchScreen.storyboard */,
+				48B4FF3620B7E51400F22627 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		48B4FF4520B7E65E00F22627 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				48B4FF4E20B7EA2800F22627 /* GoogleService-Info.plist */,
+				48B4FF3E20B7E51400F22627 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		48B4FF4720B7E7DB00F22627 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				48B4FF3220B7E51400F22627 /* AppDelegate.swift */,
+				48B4FF5020B7F2C600F22627 /* Registrar.swift */,
+				48B4FF4C20B7E84F00F22627 /* Root.swift */,
+				48B4FF4A20B7E82A00F22627 /* SignIn.swift */,
+				4871AC3220B923DE00128EB5 /* Welcome.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F7BC7DEAA3546A465961D72B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F27401785E651FF4C93DBBA5 /* Pods-Chika.debug.xcconfig */,
+				8C55B4A4C6615756D1318A3B /* Pods-Chika.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD4D0295EE3D7C34C5EAD381 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40D86249078686F4C6DEE114 /* Pods_Chika.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48B4FF2E20B7E51400F22627 /* Chika */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48B4FF4120B7E51400F22627 /* Build configuration list for PBXNativeTarget "Chika" */;
+			buildPhases = (
+				0D0F6C811EA6257DCB1E6F0B /* [CP] Check Pods Manifest.lock */,
+				48B4FF2B20B7E51400F22627 /* Sources */,
+				48B4FF2C20B7E51400F22627 /* Frameworks */,
+				48B4FF2D20B7E51400F22627 /* Resources */,
+				B5D81960E71EE69F41020238 /* [CP] Embed Pods Frameworks */,
+				43FBE74A6D960DC373630C5B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chika;
+			productName = Chika;
+			productReference = 48B4FF2F20B7E51400F22627 /* Chika.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48B4FF2720B7E51400F22627 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Nir;
+				TargetAttributes = {
+					48B4FF2E20B7E51400F22627 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 48B4FF2A20B7E51400F22627 /* Build configuration list for PBXProject "Chika" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48B4FF2620B7E51400F22627;
+			productRefGroup = 48B4FF3020B7E51400F22627 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48B4FF2E20B7E51400F22627 /* Chika */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48B4FF2D20B7E51400F22627 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B4FF3D20B7E51400F22627 /* LaunchScreen.storyboard in Resources */,
+				48B4FF4F20B7EA2800F22627 /* GoogleService-Info.plist in Resources */,
+				48B4FF3A20B7E51400F22627 /* Assets.xcassets in Resources */,
+				48B4FF3820B7E51400F22627 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D0F6C811EA6257DCB1E6F0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chika-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43FBE74A6D960DC373630C5B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chika/Pods-Chika-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5D81960E71EE69F41020238 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Chika/Pods-Chika-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChikaCore/ChikaCore.framework",
+				"${BUILT_PRODUCTS_DIR}/ChikaFirebase/ChikaFirebase.framework",
+				"${BUILT_PRODUCTS_DIR}/ChikaRegistrar/ChikaRegistrar.framework",
+				"${BUILT_PRODUCTS_DIR}/ChikaSignIn/ChikaSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/ChikaWelcome/ChikaWelcome.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCommunity/FirebaseCommunity.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChikaCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChikaFirebase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChikaRegistrar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChikaSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChikaWelcome.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCommunity.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chika/Pods-Chika-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48B4FF2B20B7E51400F22627 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B4FF3320B7E51400F22627 /* AppDelegate.swift in Sources */,
+				4871AC3320B923DE00128EB5 /* Welcome.swift in Sources */,
+				48B4FF5120B7F2C600F22627 /* Registrar.swift in Sources */,
+				48B4FF4B20B7E82A00F22627 /* SignIn.swift in Sources */,
+				48B4FF4D20B7E84F00F22627 /* Root.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		48B4FF3620B7E51400F22627 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48B4FF3720B7E51400F22627 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48B4FF3B20B7E51400F22627 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48B4FF3C20B7E51400F22627 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48B4FF3F20B7E51400F22627 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48B4FF4020B7E51400F22627 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48B4FF4220B7E51400F22627 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F27401785E651FF4C93DBBA5 /* Pods-Chika.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Chika/Support Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nir.Chika;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48B4FF4320B7E51400F22627 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C55B4A4C6615756D1318A3B /* Pods-Chika.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Chika/Support Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nir.Chika;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48B4FF2A20B7E51400F22627 /* Build configuration list for PBXProject "Chika" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B4FF3F20B7E51400F22627 /* Debug */,
+				48B4FF4020B7E51400F22627 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48B4FF4120B7E51400F22627 /* Build configuration list for PBXNativeTarget "Chika" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B4FF4220B7E51400F22627 /* Debug */,
+				48B4FF4320B7E51400F22627 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48B4FF2720B7E51400F22627 /* Project object */;
+}
