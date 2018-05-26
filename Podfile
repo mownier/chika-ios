@@ -9,5 +9,7 @@ target 'Chika' do
     pod 'ChikaSignIn'
     pod 'ChikaRegistrar'
     pod 'ChikaWelcome'
+    pod 'ChikaInbox'
+    pod 'ChikaContactList'
 
 end
